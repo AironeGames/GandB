@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "gandb",
+	"version": "1.0.0",
+	"name": "GandB",
+	"description": "Add a new flavor to your lanterns, giving them potion effects! Port by Airone",
+	"authors": [
+		"yuriineves"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/yuriineves"
+	},
+	"license": "MIT",
+	"icon": "assets/gandb/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.airone.gandb.GandB"
+		],
+		"fabric-datagen": [
+			"net.airone.gandb.GandBDataGenerator"
+		],
+		"client": [
+			"net.airone.gandb.GandBModClient"
+		]
+	},
+	"mixins": [
+		"gandb.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
