@@ -2,13 +2,13 @@
 	"schemaVersion": 1,
 	"id": "gandb",
 	"version": "1.0.0",
-	"name": "GandB",
+	"name": "Glow & Behold",
 	"description": "Add a new flavor to your lanterns, giving them potion effects! Port by Airone",
 	"authors": [
-		"yuriineves"
+		"Airone"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/user/yuriineves"
+		"sources": "https://github.com/AironeGames/GandB"
 	},
 	"license": "MIT",
 	"icon": "assets/gandb/icon.png",
