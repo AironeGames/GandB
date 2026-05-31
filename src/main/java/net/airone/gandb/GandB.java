@@ -22,10 +22,10 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class GandBMod
+public class GandB
 implements ModInitializer {
     public static final EmptyLantern EMPTY_LANTERN = new EmptyLantern(AbstractBlock.Settings.create().strength(3.5f).sounds(BlockSoundGroup.LANTERN).luminance(state -> 15).requiresTool().nonOpaque());
-    public static final BlockEntityType<EmptyLanternEntity> EMPTY_LANTERN_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of("glowandbehold", "empty_lantern_entity"), FabricBlockEntityTypeBuilder.create(EmptyLanternEntity::new, (Block[])new Block[]{EMPTY_LANTERN}).build());
+    public static final BlockEntityType<EmptyLanternEntity> EMPTY_LANTERN_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of("gandb", "empty_lantern_entity"), FabricBlockEntityTypeBuilder.create(EmptyLanternEntity::new, (Block[])new Block[]{EMPTY_LANTERN}).build());
     public static final String MOD_ID = "gandb";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
@@ -34,13 +34,13 @@ implements ModInitializer {
 
         Registry.register(
             Registries.BLOCK,
-            Identifier.of("glowandbehold", "empty_lantern"),
+            Identifier.of("gandb", "empty_lantern"),
             EMPTY_LANTERN
         );
 
         Item EMPTY_LANTERN_ITEM = Registry.register(
             Registries.ITEM,
-            Identifier.of("glowandbehold", "empty_lantern"),
+            Identifier.of("gandb", "empty_lantern"),
             new BlockItem(EMPTY_LANTERN, new Item.Settings())
         );
 

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "gandb:block/empty_lantern"
+    },
+    "hanging=true": {
+      "model": "gandb:block/empty_lantern_hanging"
+    }
+  }
+}

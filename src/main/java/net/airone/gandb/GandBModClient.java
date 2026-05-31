@@ -1,7 +1,7 @@
 package net.airone.gandb;
 
 import net.airone.gandb.EmptyLanternEntity;
-import net.airone.gandb.GandBMod;
+import net.airone.gandb.GandB;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -17,11 +17,11 @@ import net.minecraft.state.property.Property;
 public class GandBModClient
 implements ClientModInitializer {
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(GandBMod.EMPTY_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(GandB.EMPTY_LANTERN, RenderLayer.getCutout());
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
             int color = world != null && world.getBlockEntity(pos) != null && world.getBlockEntity(pos) instanceof EmptyLanternEntity && ((EmptyLanternEntity)world.getBlockEntity(pos)).getRenderAttachmentData() != null && (Boolean)state.get(EmptyLantern.FILLED) != false ? ((StatusEffect)((EmptyLanternEntity)world.getBlockEntity(pos)).getRenderAttachmentData()).getColor() : -1;
             return color;
-        }, new Block[]{GandBMod.EMPTY_LANTERN});
+        }, new Block[]{GandB.EMPTY_LANTERN});
     }
 }
 
