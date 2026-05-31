@@ -1,9 +1,15 @@
 # GandB
 
-## Setup
+## About
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+This is a repository for the Minecraft mod Glow & Behold port to version 1.21.1.
+Modrinth: https://modrinth.com/mod/glowandbehold-1.21.1-unofficial-port
+
+## Original
+
+The author of the original mod is sn0wfrog (nickname on Modrinth, link to Modrinth: https://modrinth.com/user/sn0wfrog)
+Link to the original mod: https://modrinth.com/mod/glowandbehold
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Distributed under the MIT License according to the original project's license.
